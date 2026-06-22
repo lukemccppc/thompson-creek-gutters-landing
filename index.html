@@ -488,6 +488,8 @@
 
   @media (max-width: 640px) {
     .topbar-msg { font-size: 11.5px; text-align: center; }
+    .hero-grid { padding-top: 20px; }
+    .badge-row { margin-bottom: 12px; }
     .hero-headline { font-size: 30px; }
     .hero-sub { font-size: 15.5px; }
     .lf-row { grid-template-columns: 1fr; }
@@ -495,7 +497,12 @@
     .steps-grid { grid-template-columns: 1fr 1fr; }
     section { padding: 52px 0; }
     .finance-strip { flex-direction: column; text-align: center; padding: 28px 22px; }
-    .sticky-cta { display: block; }
+    .sticky-cta {
+      display: block;
+      transform: translateY(100%);
+      transition: transform 0.25s ease;
+    }
+    .sticky-cta.is-visible { transform: translateY(0); }
     body { padding-bottom: 58px; }
     .site-header .wrap { gap: 10px; }
     .logo-box img { height: 30px; }
@@ -778,9 +785,19 @@
 </footer>
 
 <!-- ─── STICKY MOBILE CTA ─── -->
-<div class="sticky-cta">
+<div class="sticky-cta" id="stickyCta">
   <a href="#estimate">Get My Free Estimate &rarr;</a>
 </div>
+
+<script>
+  (function () {
+    var stickyCta = document.getElementById('stickyCta');
+    var showAfter = 80;
+    window.addEventListener('scroll', function () {
+      stickyCta.classList.toggle('is-visible', window.scrollY > showAfter);
+    }, { passive: true });
+  })();
+</script>
 
 </body>
 </html>
