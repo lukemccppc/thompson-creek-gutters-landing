@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Thompson Creek Gutters | Seamless Gutters & Gutter Guards — Free Estimate</title>
+<meta name="description" content="Clog-free gutter protection backed by Thompson Creek's lifetime warranty. Get a free, no-obligation estimate today." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --navy: #0B2F4F;
+    --navy-dk: #071F38;
+    --navy-md: #143F65;
+    --gold: #E8A23A;
+    --gold-h: #D38F28;
+    --red: #C8392A;
+    --ink: #16242E;
+    --grey: #5C6B76;
+    --bg-soft: #F4F7FA;
+    --line: #E1E7ED;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--ink);
+    background: #fff;
+    line-height: 1.55;
+  }
+
+  h1, h2, h3, .mont { font-family: 'Montserrat', sans-serif; }
+
+  img { max-width: 100%; display: block; }
+
+  .wrap { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    letter-spacing: 0.4px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.18s, transform 0.12s;
+  }
+
+  .btn-gold {
+    background: var(--gold);
+    color: var(--navy-dk);
+  }
+  .btn-gold:hover { background: var(--gold-h); }
+
+  .btn:active { transform: translateY(1px); }
+
+  /* ─── TOP BAR ─── */
+  .topbar {
+    background: var(--navy-dk);
+    padding: 9px 0;
+    color: #fff;
+    font-size: 13px;
+  }
+  .topbar .wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .topbar-msg { font-weight: 600; }
+  .topbar-msg b { color: var(--gold); }
+  .topbar-phone {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 800;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+  }
+
+  /* ─── HEADER ─── */
+  header.site-header {
+    background: #fff;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .site-header .wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo-box {
+    background: var(--navy);
+    padding: 10px 18px;
+    border-radius: 6px;
+    display: inline-flex;
+  }
+  .logo-box img { height: 26px; width: auto; }
+
+  .header-cta { display: flex; align-items: center; gap: 18px; }
+  .header-cta .btn { padding: 13px 24px; font-size: 14px; }
+
+  /* ─── HERO ─── */
+  .hero {
+    position: relative;
+    background:
+      linear-gradient(120deg, rgba(7,31,56,0.94) 0%, rgba(11,47,79,0.88) 45%, rgba(11,47,79,0.55) 100%),
+      linear-gradient(160deg, #2c4a63 0%, #173349 45%, #0b2236 100%);
+    overflow: hidden;
+  }
+
+  .hero-grid {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1.15fr 460px;
+    gap: 48px;
+    align-items: center;
+    padding: 64px 24px 56px;
+  }
+
+  .badge-row {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 18px;
+  }
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.22);
+    color: #fff;
+    font-size: 12.5px;
+    font-weight: 700;
+    padding: 6px 12px;
+    border-radius: 20px;
+  }
+  .badge .star { color: var(--gold); }
+
+  .hero-headline {
+    font-size: clamp(34px, 4.4vw, 54px);
+    font-weight: 900;
+    line-height: 1.08;
+    color: #fff;
+    margin-bottom: 16px;
+  }
+  .hero-headline .accent { color: var(--gold); }
+
+  .hero-sub {
+    font-size: 18px;
+    color: rgba(255,255,255,0.85);
+    max-width: 480px;
+    margin-bottom: 28px;
+  }
+
+  .hero-benefits {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 8px;
+  }
+  .hb-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 15.5px;
+  }
+  .hb-check {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: var(--gold);
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+  }
+
+  /* Form card */
+  .form-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 28px 26px;
+    box-shadow: 0 24px 60px rgba(0,0,0,0.35);
+  }
+  .fc-ribbon {
+    background: var(--red);
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 8px 10px;
+    border-radius: 6px;
+    margin: -28px -26px 18px;
+  }
+  .fc-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 21px;
+    font-weight: 800;
+    color: var(--navy-dk);
+    margin-bottom: 4px;
+  }
+  .fc-sub {
+    font-size: 13.5px;
+    color: var(--grey);
+    margin-bottom: 18px;
+  }
+  .lform { display: flex; flex-direction: column; gap: 10px; }
+  .lf-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .lf-input {
+    width: 100%;
+    padding: 13px 14px;
+    border: 1.5px solid var(--line);
+    border-radius: 6px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14.5px;
+    color: var(--ink);
+    outline: none;
+    transition: border-color 0.18s, box-shadow 0.18s;
+  }
+  .lf-input::placeholder { color: #9aa6af; }
+  .lf-input:focus {
+    border-color: var(--navy);
+    box-shadow: 0 0 0 3px rgba(11,47,79,0.12);
+  }
+  .lf-btn {
+    width: 100%;
+    padding: 16px;
+    background: var(--red);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 4px;
+    transition: background 0.18s, transform 0.12s;
+  }
+  .lf-btn:hover { background: #AC2F22; }
+  .lf-btn:active { transform: translateY(1px); }
+
+  .fc-secure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    font-size: 12px;
+    color: var(--grey);
+    margin-top: 12px;
+  }
+  .fc-disclaimer {
+    font-size: 10.5px;
+    color: #9aa6af;
+    line-height: 1.45;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  /* ─── STAT BAR ─── */
+  .statbar {
+    background: var(--bg-soft);
+    border-bottom: 1px solid var(--line);
+    padding: 26px 0;
+  }
+  .statbar .wrap {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    text-align: center;
+  }
+  .stat-n {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+    color: var(--navy);
+  }
+  .stat-l {
+    font-size: 13px;
+    color: var(--grey);
+    font-weight: 600;
+    margin-top: 2px;
+  }
+
+  /* ─── SECTION GENERIC ─── */
+  section { padding: 72px 0; }
+  .section-soft { background: var(--bg-soft); }
+
+  .eyebrow {
+    display: inline-block;
+    color: var(--red);
+    font-weight: 800;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  .section-title {
+    font-size: clamp(28px, 3vw, 38px);
+    font-weight: 900;
+    color: var(--navy-dk);
+    line-height: 1.15;
+    margin-bottom: 14px;
+  }
+  .section-lead {
+    font-size: 16.5px;
+    color: var(--grey);
+    max-width: 620px;
+  }
+
+  /* Features two-col */
+  .features-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 56px;
+    align-items: start;
+    margin-top: 44px;
+  }
+  .feature-list { display: flex; flex-direction: column; gap: 22px; }
+  .feature {
+    display: flex;
+    gap: 16px;
+  }
+  .feature-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    background: var(--navy);
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+  }
+  .feature h3 {
+    font-size: 17px;
+    font-weight: 800;
+    color: var(--navy-dk);
+    margin-bottom: 4px;
+  }
+  .feature p { font-size: 14.5px; color: var(--grey); }
+
+  /* Products / system cards */
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 44px;
+  }
+  .product-card {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: box-shadow 0.2s, transform 0.2s;
+  }
+  .product-card:hover { box-shadow: 0 14px 32px rgba(11,47,79,0.12); transform: translateY(-3px); }
+  .product-img {
+    height: 160px;
+    background: linear-gradient(135deg, var(--navy-md), var(--navy));
+    display: grid;
+    place-items: center;
+  }
+  .product-body { padding: 20px; }
+  .product-tag {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--red);
+    margin-bottom: 8px;
+  }
+  .product-body h3 { font-size: 18px; font-weight: 800; color: var(--navy-dk); margin-bottom: 8px; }
+  .product-body p { font-size: 14px; color: var(--grey); margin-bottom: 14px; }
+  .product-link {
+    font-size: 13.5px;
+    font-weight: 800;
+    color: var(--navy);
+    text-decoration: none;
+  }
+
+  /* Process steps */
+  .steps-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-top: 44px;
+  }
+  .step { text-align: center; padding: 0 8px; position: relative; }
+  .step-n {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: var(--navy);
+    color: var(--gold);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-weight: 900;
+    display: grid;
+    place-items: center;
+    margin: 0 auto 16px;
+  }
+  .step h3 { font-size: 16px; font-weight: 800; color: var(--navy-dk); margin-bottom: 6px; }
+  .step p { font-size: 13.5px; color: var(--grey); }
+
+  /* Testimonials */
+  .testi-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 44px;
+  }
+  .testi-card {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 24px;
+  }
+  .testi-stars { color: var(--gold); font-size: 15px; margin-bottom: 12px; letter-spacing: 2px; }
+  .testi-quote { font-size: 14.5px; color: var(--ink); margin-bottom: 16px; }
+  .testi-name { font-size: 13.5px; font-weight: 800; color: var(--navy-dk); }
+  .testi-loc { font-size: 12.5px; color: var(--grey); }
+
+  /* Financing strip */
+  .finance-strip {
+    background: var(--navy);
+    color: #fff;
+    border-radius: 14px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    margin-top: 56px;
+    flex-wrap: wrap;
+  }
+  .finance-strip h3 { font-size: 24px; font-weight: 800; margin-bottom: 6px; }
+  .finance-strip p { font-size: 14.5px; color: rgba(255,255,255,0.78); max-width: 480px; }
+
+  /* Final CTA */
+  .final-cta {
+    background:
+      linear-gradient(120deg, rgba(7,31,56,0.95) 0%, rgba(11,47,79,0.9) 100%),
+      linear-gradient(160deg, #2c4a63 0%, #0b2236 100%);
+    padding: 64px 0;
+    text-align: center;
+    color: #fff;
+  }
+  .final-cta h2 { font-size: clamp(26px, 3.4vw, 38px); font-weight: 900; margin-bottom: 12px; }
+  .final-cta p { font-size: 16px; color: rgba(255,255,255,0.82); margin-bottom: 28px; max-width: 560px; margin-left: auto; margin-right: auto; }
+  .final-cta .btn { padding: 18px 38px; font-size: 16px; }
+
+  /* Footer */
+  footer {
+    background: var(--navy-dk);
+    color: rgba(255,255,255,0.6);
+    padding: 28px 0;
+    font-size: 12.5px;
+    text-align: center;
+  }
+  footer a { color: rgba(255,255,255,0.75); text-decoration: none; }
+
+  /* Sticky mobile CTA */
+  .sticky-cta {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--red);
+    z-index: 50;
+    padding: 12px 16px;
+    box-shadow: 0 -4px 16px rgba(0,0,0,0.2);
+  }
+  .sticky-cta a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 15px;
+    text-decoration: none;
+  }
+
+  /* ─── RESPONSIVE ─── */
+  @media (max-width: 980px) {
+    .hero-grid { grid-template-columns: 1fr; padding: 40px 24px; }
+    .features-grid { grid-template-columns: 1fr; gap: 36px; }
+    .products-grid { grid-template-columns: 1fr 1fr; }
+    .steps-grid { grid-template-columns: 1fr 1fr; }
+    .testi-grid { grid-template-columns: 1fr; }
+    .statbar .wrap { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+  }
+
+  @media (max-width: 640px) {
+    .topbar-msg { display: none; }
+    .topbar .wrap { justify-content: center; }
+    .header-cta .cta-text { display: none; }
+    .hero-headline { font-size: 30px; }
+    .hero-sub { font-size: 15.5px; }
+    .lf-row { grid-template-columns: 1fr; }
+    .products-grid { grid-template-columns: 1fr; }
+    .steps-grid { grid-template-columns: 1fr 1fr; }
+    section { padding: 52px 0; }
+    .finance-strip { flex-direction: column; text-align: center; padding: 28px 22px; }
+    .sticky-cta { display: block; }
+    body { padding-bottom: 58px; }
+    .site-header .wrap { gap: 10px; }
+    .logo-box { padding: 8px 12px; }
+    .logo-box img { height: 20px; }
+    .header-cta .btn { padding: 11px 16px; font-size: 12.5px; white-space: nowrap; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ─── TOP BAR ─── -->
+<div class="topbar">
+  <div class="wrap">
+    <span class="topbar-msg">Limited-Time Offer: <b>0% Financing</b> Available + Free Gutter Guard Estimate</span>
+    <a href="tel:18005551234" class="topbar-phone">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M5 4h4l2 5-2.5 2.5a14 14 0 0 0 6 6L17 15l5 2v4a2 2 0 0 1-2 2C10.6 23 1 13.4 1 4a2 2 0 0 1 2-2h2z" fill="#E8A23A"/></svg>
+      (800) 555-1234
+    </a>
+  </div>
+</div>
+
+<!-- ─── HEADER ─── -->
+<header class="site-header">
+  <div class="wrap">
+    <div class="logo-box">
+      <img src="assets/tc-logo.webp" alt="Thompson Creek" />
+    </div>
+    <div class="header-cta">
+      <a href="tel:18005551234" class="cta-text mont" style="font-weight:800;color:var(--navy-dk);font-size:14px;">(800) 555-1234</a>
+      <a href="#estimate" class="btn btn-gold">Get My Free Estimate</a>
+    </div>
+  </div>
+</header>
+
+<!-- ─── HERO ─── -->
+<section class="hero" id="estimate">
+  <div class="wrap hero-grid">
+
+    <div>
+      <div class="badge-row">
+        <span class="badge"><span class="star">★★★★★</span> 4.8 Rating, 5,000+ Reviews</span>
+        <span class="badge">Family-Owned Since 1976</span>
+      </div>
+
+      <h1 class="hero-headline">
+        Clogged Gutters Are A Thing Of The <span class="accent">Past.</span>
+      </h1>
+      <p class="hero-sub">
+        Thompson Creek's seamless gutters and gutter guard system keep water flowing and debris out — backed by a lifetime, transferable warranty.
+      </p>
+
+      <div class="hero-benefits">
+        <div class="hb-item">
+          <span class="hb-check"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><polyline points="2,7.5 5.5,11 12,3" stroke="#0B2F4F" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          Custom-fit seamless aluminum gutters
+        </div>
+        <div class="hb-item">
+          <span class="hb-check"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><polyline points="2,7.5 5.5,11 12,3" stroke="#0B2F4F" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          Gutter guards that block leaves & debris
+        </div>
+        <div class="hb-item">
+          <span class="hb-check"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><polyline points="2,7.5 5.5,11 12,3" stroke="#0B2F4F" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          Professional, licensed local installers
+        </div>
+        <div class="hb-item">
+          <span class="hb-check"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><polyline points="2,7.5 5.5,11 12,3" stroke="#0B2F4F" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          Lifetime, transferable warranty
+        </div>
+      </div>
+    </div>
+
+    <div class="form-card">
+      <div class="fc-ribbon">Limited-Time Offer</div>
+      <div class="fc-title">Get Your Free Gutter Estimate</div>
+      <div class="fc-sub">Takes 60 seconds. No obligation, no pressure.</div>
+
+      <form class="lform" action="#" method="post" onsubmit="return false;">
+        <div class="lf-row">
+          <input class="lf-input" type="text" name="first_name" placeholder="First Name*" autocomplete="given-name" required />
+          <input class="lf-input" type="text" name="last_name" placeholder="Last Name*" autocomplete="family-name" required />
+        </div>
+        <input class="lf-input" type="tel" name="phone" placeholder="Phone Number*" autocomplete="tel" required />
+        <input class="lf-input" type="email" name="email" placeholder="Email Address*" autocomplete="email" required />
+        <input class="lf-input" type="text" name="zip" placeholder="Zip Code*" autocomplete="postal-code" inputmode="numeric" required />
+        <button type="submit" class="lf-btn">
+          GET MY FREE ESTIMATE
+          <svg width="18" height="18" viewBox="0 0 20 20" fill="none" aria-hidden="true"><line x1="2" y1="10" x2="17" y2="10" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/><polyline points="11,4 17,10 11,16" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </form>
+
+      <div class="fc-secure">
+        <svg width="13" height="13" viewBox="0 0 13 13" fill="none" aria-hidden="true"><rect x="1.5" y="5.5" width="10" height="7" rx="1.5" stroke="#9aa6af" stroke-width="1.2"/><path d="M4 5.5V4C4 2.3 9 2.3 9 4V5.5" stroke="#9aa6af" stroke-width="1.2"/></svg>
+        Your information is safe and secure.
+      </div>
+      <p class="fc-disclaimer">
+        By clicking "Get My Free Estimate" you agree to receive calls, texts or emails about your inquiry, which may use automated technology. Consent is not a condition of purchase.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ─── STAT BAR ─── -->
+<div class="statbar">
+  <div class="wrap">
+    <div>
+      <div class="stat-n">45+</div>
+      <div class="stat-l">Years In Business</div>
+    </div>
+    <div>
+      <div class="stat-n">A+</div>
+      <div class="stat-l">BBB Rating</div>
+    </div>
+    <div>
+      <div class="stat-n">300K+</div>
+      <div class="stat-l">Homes Served</div>
+    </div>
+    <div>
+      <div class="stat-n">Lifetime</div>
+      <div class="stat-l">Warranty Coverage</div>
+    </div>
+  </div>
+</div>
+
+<!-- ─── FEATURES ─── -->
+<section>
+  <div class="wrap">
+    <span class="eyebrow">Why Thompson Creek</span>
+    <h2 class="section-title">Built To Protect Your Home,<br>Not Just Your Gutters.</h2>
+    <p class="section-lead">From the first inspection to the final clean-up, every Thompson Creek gutter installation is engineered for your home's exact roofline — no kits, no shortcuts.</p>
+
+    <div class="features-grid">
+      <div class="feature-list">
+        <div class="feature">
+          <div class="feature-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M3 14L12 4l9 10" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 12v8h14v-8" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round"/></svg></div>
+          <div>
+            <h3>Seamless, Custom-Fit Gutters</h3>
+            <p>Formed on-site to your home's exact measurements — no leaky seams, no gaps for water to escape.</p>
+          </div>
+        </div>
+        <div class="feature">
+          <div class="feature-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 6h16M4 12h16M4 18h10" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg></div>
+          <div>
+            <h3>Micro-Mesh Gutter Guards</h3>
+            <p>A fine mesh cover keeps out leaves, pine needles, and shingle grit while letting water flow freely.</p>
+          </div>
+        </div>
+        <div class="feature">
+          <div class="feature-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#fff" stroke-width="2"/><polyline points="8,12.5 11,15.5 16,9" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div>
+            <h3>Lifetime, Transferable Warranty</h3>
+            <p>Coverage on materials and workmanship that stays with your home — a real selling point if you ever move.</p>
+          </div>
+        </div>
+      </div>
+      <div class="feature-list">
+        <div class="feature">
+          <div class="feature-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="16" height="16" rx="2" stroke="#fff" stroke-width="2"/><path d="M8 12h8M12 8v8" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg></div>
+          <div>
+            <h3>Your Choice Of Colors & Finishes</h3>
+            <p>Heavy-gauge aluminum in dozens of factory-baked colors to match your trim, fascia, or roofline.</p>
+          </div>
+        </div>
+        <div class="feature">
+          <div class="feature-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="7" cy="18" r="2" stroke="#fff" stroke-width="2"/><circle cx="17" cy="18" r="2" stroke="#fff" stroke-width="2"/><path d="M5 18h0a2 2 0 0 1 2-2h6l4-7h3" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div>
+            <h3>In-House Installation Crews</h3>
+            <p>No subcontractors — trained, background-checked Thompson Creek installers handle your project start to finish.</p>
+          </div>
+        </div>
+        <div class="feature">
+          <div class="feature-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-4.5-7-10a7 7 0 0 1 14 0c0 5.5-7 10-7 10z" stroke="#fff" stroke-width="2" fill="none"/><circle cx="12" cy="11" r="2.5" stroke="#fff" stroke-width="2"/></svg></div>
+          <div>
+            <h3>Local Pros Who Know Your Climate</h3>
+            <p>Decades of experience installing gutter systems built for the storms and seasons in your area.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── PRODUCTS ─── -->
+<section class="section-soft">
+  <div class="wrap">
+    <span class="eyebrow">Our Gutter Systems</span>
+    <h2 class="section-title">Pick The Protection That Fits Your Home.</h2>
+    <p class="section-lead">Every system is installed and backed by the same Thompson Creek crew and warranty.</p>
+
+    <div class="products-grid">
+      <div class="product-card">
+        <div class="product-img"><svg width="56" height="56" viewBox="0 0 24 24" fill="none"><path d="M3 14L12 4l9 10" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 12v8h14v-8" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round"/></svg></div>
+        <div class="product-body">
+          <span class="product-tag">Most Popular</span>
+          <h3>Seamless Gutters</h3>
+          <p>Custom-formed, leak-resistant aluminum gutters fabricated on-site for a perfect fit.</p>
+          <a href="#estimate" class="product-link">Get a Price &rarr;</a>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-img"><svg width="56" height="56" viewBox="0 0 24 24" fill="none"><path d="M4 6h16M4 12h16M4 18h10" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+        <div class="product-body">
+          <span class="product-tag">Best For Maintenance</span>
+          <h3>Gutter Guards</h3>
+          <p>Micro-mesh covers that stop clogs before they start — no more climbing a ladder to clean gutters.</p>
+          <a href="#estimate" class="product-link">Get a Price &rarr;</a>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-img"><svg width="56" height="56" viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="16" height="16" rx="2" stroke="#fff" stroke-width="1.8"/><path d="M8 12h8M12 8v8" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+        <div class="product-body">
+          <span class="product-tag">Full Replacement</span>
+          <h3>Gutter Replacement</h3>
+          <p>Tear out old, sagging, or rusted gutters and replace with a complete, warrantied new system.</p>
+          <a href="#estimate" class="product-link">Get a Price &rarr;</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="finance-strip">
+      <div>
+        <h3>0% Financing Available</h3>
+        <p>Protect your home today and pay over time with flexible financing options approved on the spot for qualified homeowners.</p>
+      </div>
+      <a href="#estimate" class="btn btn-gold" style="padding:16px 30px;font-size:14.5px;">See If I Qualify</a>
+    </div>
+  </div>
+</section>
+
+<!-- ─── HOW IT WORKS ─── -->
+<section>
+  <div class="wrap">
+    <span class="eyebrow">How It Works</span>
+    <h2 class="section-title">From Estimate To Installed In Four Easy Steps.</h2>
+
+    <div class="steps-grid">
+      <div class="step">
+        <div class="step-n">1</div>
+        <h3>Free In-Home Estimate</h3>
+        <p>A local expert inspects your gutters and roofline, no cost or obligation.</p>
+      </div>
+      <div class="step">
+        <div class="step-n">2</div>
+        <h3>Custom Design & Quote</h3>
+        <p>We measure your home and recommend the right system and color for it.</p>
+      </div>
+      <div class="step">
+        <div class="step-n">3</div>
+        <h3>Professional Installation</h3>
+        <p>Our in-house crew installs your system, usually in a single day.</p>
+      </div>
+      <div class="step">
+        <div class="step-n">4</div>
+        <h3>Lifetime Peace Of Mind</h3>
+        <p>Enjoy clog-free gutters backed by a transferable lifetime warranty.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── TESTIMONIALS ─── -->
+<section class="section-soft">
+  <div class="wrap">
+    <span class="eyebrow">Homeowner Reviews</span>
+    <h2 class="section-title">Trusted By Homeowners Across The Region.</h2>
+
+    <div class="testi-grid">
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-quote">"Our gutters used to overflow every storm. Since Thompson Creek installed the guards, we haven't had to clean them once. Install crew was fast and clean."</p>
+        <div class="testi-name">Karen M.</div>
+        <div class="testi-loc">Rockville, MD</div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-quote">"Quote was straightforward, no high-pressure sales. The seamless gutters look great and the financing made it easy to say yes."</p>
+        <div class="testi-name">David R.</div>
+        <div class="testi-loc">Alexandria, VA</div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-quote">"Been a Thompson Creek customer for windows and now gutters. Same level of professionalism every time. Highly recommend."</p>
+        <div class="testi-name">Patricia L.</div>
+        <div class="testi-loc">Frederick, MD</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FINAL CTA ─── -->
+<section class="final-cta">
+  <div class="wrap">
+    <h2>Stop Climbing The Ladder. Start Protecting Your Home.</h2>
+    <p>Get a free, no-obligation gutter estimate from your local Thompson Creek team today.</p>
+    <a href="#estimate" class="btn btn-gold">Get My Free Estimate</a>
+  </div>
+</section>
+
+<!-- ─── FOOTER ─── -->
+<footer>
+  <div class="wrap">
+    &copy; 2026 Thompson Creek. All rights reserved. &middot; Licensed & Insured &middot; <a href="tel:18005551234">(800) 555-1234</a>
+  </div>
+</footer>
+
+<!-- ─── STICKY MOBILE CTA ─── -->
+<div class="sticky-cta">
+  <a href="#estimate">Get My Free Estimate &rarr;</a>
+</div>
+
+</body>
+</html>
